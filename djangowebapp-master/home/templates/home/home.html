@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+
+
+{% block content %}
+    <form class="form" method="GET" action=".">
+    <input type="text" placeholder="Search.." name="q" value="{{ name.GET.q }}">
+    <button class="btn btn-default" type="Submit">Search</button>
+    </form>
+
+    {% for item in data %}
+        <div class="container">
+            <h1><a href="#">{{ item.title }}</a></h1>
+            <p>{{ item.description }}</p>
+            <p>{{ item.time }}</p>
+            <img src="{{ item.picture.url }}"/>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
