@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+    <h1>blog</h1>
+    <form class="blog-form" action="{% url 'Blog:blogcreate' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input type="Submit" value="send">
+    </form>
+{% endblock %}
