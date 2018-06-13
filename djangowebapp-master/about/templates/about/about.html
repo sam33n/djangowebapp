@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+    <h1>About</h1>
+    <p>this is an informative section</p>
+    {% for d in datas %}
+       <div class="container">
+            <h2><a href="#">{{ d.title }}</a></h2>
+            <p>{{ d.description }}</p>
+            <img src="{{ d.thumbnail.url }}">
+       </div>
+    {% endfor %}
+{% endblock %}
