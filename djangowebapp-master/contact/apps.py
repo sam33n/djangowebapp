@@ -12,7 +12,7 @@ class Test:
 
 # local changes
 
-# leaving to check the rebase, how it works
+# outgoing to check the rebase, how it works
 
 # rebase points the header to the current feature branch
 
