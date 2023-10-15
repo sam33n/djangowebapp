@@ -7,3 +7,5 @@ class ContactConfig(AppConfig):
 
 class Test:
     pass
+
+# added changes again to check stash
