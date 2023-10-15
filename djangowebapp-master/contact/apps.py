@@ -11,3 +11,5 @@ class Test:
 # added changes again to check stash
 
 # local changes
+
+# going to check the rebase, how it works
