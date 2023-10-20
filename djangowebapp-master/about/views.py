@@ -6,4 +6,5 @@ def about(request):
     return render(request, 'about/about.html',{ 'datas' : datas })
 
 
-# this is all about the about
+# this is all about the database
+# adding some random comments
