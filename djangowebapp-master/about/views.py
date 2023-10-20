@@ -7,3 +7,4 @@ def about(request):
 
 
 # this is all about the database
+# adding some random comments
